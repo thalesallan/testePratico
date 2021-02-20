@@ -1,0 +1,23 @@
+Primissas Assumidas e Decisões de projeto:
+
+Foi criada uma classe PetShop onde contém o método gerarPetshops
+que cria uma lista com os três petshops logo após retorna a lista.
+
+Na mesma classe foi criado o o método CalcValor, os inputs do usuário
+são recebidos dentro dela.
+Recebendo os inputs logo entra em um if para saber se a data digitada
+pelo usuário se refere a um final de semana ou não, se for final de semana,
+um for percorre a lista e entra dentro de um outro If que compara a posição do for
+com o id do petshop para adicionar a taxa do valor no final de semana de cada petshop.
+Se não for final de semana entra em um Else que faz o calculo com os valores passados na 
+criação da lista, voltando um valor da variável do tipo double PrecoTotal de cada Petshop.
+
+Tendo o valor total de cada petshop e chamada no main o metodo MelhorOpcao, que faz uma
+comparaçao dos precos totais utilizando o .Sort. 
+um if compara dois precos totais e logo depois um else if,  se ouver empate nos preços, o
+else compara a distancia menor.
+No final do método um Console.WriteLine() imprime o melhor resultado com base na comparação feita.
+
+Para executar
+No Console digite primeiro a data dd/mm/aaaa, depois quantidade de cães pequeno depois quantidade de 
+cães grandes.
