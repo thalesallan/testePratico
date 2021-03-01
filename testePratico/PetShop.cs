@@ -75,14 +75,14 @@ namespace testePratico
                 {
                     if (ListaPetShop[i].Id == 0)
                     {
-                        double tempP = (ListaPetShop[i].PrecoPequeno * 1.2) * qtdPequeno;
-                        double tempG = (ListaPetShop[i].PrecoGrande * 1.2) * qtdGrande;
+                        double tempP = (ListaPetShop[i].PrecoPequeno + 5) * qtdPequeno;
+                        double tempG = (ListaPetShop[i].PrecoGrande + 5) * qtdGrande;
                         ListaPetShop[i].PrecoTotal = tempP + tempG;
                     }
                     else if (ListaPetShop[i].Id == 1)
                     {
-                        double tempP = (ListaPetShop[i].PrecoPequeno + 5) * qtdPequeno;
-                        double tempG = (ListaPetShop[i].PrecoGrande + 5) * qtdGrande;
+                        double tempP = (ListaPetShop[i].PrecoPequeno * 1.2) * qtdPequeno;
+                        double tempG = (ListaPetShop[i].PrecoGrande * 1.2) * qtdGrande;
                         ListaPetShop[i].PrecoTotal = tempP + tempG;
                     }
                     else
